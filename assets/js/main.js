@@ -107,15 +107,8 @@ const getTime = () => {
 // Current Timezone and longitude, latitude
 const getTimezone = async () => {
   try {
-    const { data } = await axios.get("http://ip-api.com/json/");
-    const {
-      countryCode: country_code,
-      country: country_name,
-      lat: latitude,
-      lon: longitude,
-      regionName: region_name,
-      timezone: time_zone,
-    } = data;
+    const { data } = await axios.get("https://ipapi.co/json/");
+    const { country_code, country_name, latitude, longitude, region: region_name, timezone: time_zone } = data;
 
     division.innerText = `In ${region_name}, ${country_code}`;
     getWeather(latitude, longitude);
