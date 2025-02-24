@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather - Clock</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section Start -->
+      <section class="hero__section">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__data">
+              <div class="hero__quotes">
+                <!-- <p class="quotes">
+                  “Every friendship is different because everyone's personality
+                  is different.”
+                </p>
+                <span class="quotes__author">Nargis Fakhri</span> -->
+              </div>
+
+              <div class="hero__weather">
+                <div class="weather__container">
+                  <canvas class="weather__icon" width="70" height="70"></canvas>
+                  <span class="weather__temperature">
+                    <span class="temperature"></span>
+                    <span class="degree">&deg;</span>
+                    <span class="fahrenheit">C</span>
+                  </span>
+                </div>
+                <span class="weather__summery"></span>
+                <span class="weather__feels--like"></span>
+                <!-- <div class="weather__low--high">
+                  <div class="weather__low">
+                    <span class="low__text">Low Temp.</span>
+                    <span class="low__temp"></span>
+                  </div>
+                  <div class="weather__high">
+                    <span class="high__text">High Temp.</span>
+                    <span class="high__temp"></span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <!-- Hero Time -->
+            <div class="hero__time--date">
+              <div class="hero__date">
+                <span class="dates"></span>
+                <span class="months"></span>
+                <span class="days"></span>
+              </div>
+
+              <div class="time__container">
+                <div class="time__greetings">
+                  <canvas class="time__greetings--icon" width="20" height="20"></canvas>
+                  <span class="greetings"></span>
+                </div>
+
+                <div class="time__data">
+                  <div class="time__wrapper">
+                    <span class="hours"></span>
+                    <span class="minutes"></span>
+                    <span class="colon">:</span>
+                    <span class="seconds"></span>
+                  </div>
+                  <span class="ampm"></span>
+                </div>
+                <span class="division"></span>
+                <span class="weather__timezone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <img src="" alt="BG Image" class="main__bg" />
+    </main>
+
+    <!-- JS File -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/skycons.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
